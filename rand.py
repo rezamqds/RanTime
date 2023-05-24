@@ -1,5 +1,5 @@
 import time
-# no numpuy or 
+# no func or any library except time ;)
 def rand(u=10):
     #random choose
     # r = time.monotonic_ns()
@@ -58,14 +58,31 @@ def rand(u=10):
 
         # we got the len and use it with .format and join for more greater numbers!
         Dlen = pow(10, c) 
+        cdev2=c//2
         # print(Dlen)
         # Dlen: use it for times that should mul the num in 10
-        while True:
+
+        """while True:
+            count = 0
             r = time.monotonic_ns()%Dlen
-            print(f"its not the res: {r}")
+            count = count + 1
+            if count > 25:
+                r = rand(pow(10, cdev2)*rand(pow(10, cdev2)))
+            print(f"{count} : its not the res: {r}")
+            if r <= u :
+                return (r)
+                break"""
+        
+        for itter in range(50):
+            r = time.monotonic_ns()%Dlen
+            time.sleep(0.005)
+            # print(f"{itter} : its not the res: {r}")
             if r <= u :
                 return (r)
                 break
+        return u//rand(100)
+
+# print(rand(45))
 
 
 # user input :
