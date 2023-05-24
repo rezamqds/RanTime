@@ -41,6 +41,7 @@ def rand(u=10):
     elif u<=1000:
         while True:
             r = time.monotonic_ns()%1000
+            # print(r)
             if r <= u :
                 return (r)
                 break
@@ -73,13 +74,14 @@ def rand(u=10):
                 return (r)
                 break"""
         
-        for itter in range(15):
-            r = time.monotonic_ns()%Dlen
-            time.sleep(0.005)
-            # print(f"{itter} : its not the res: {r}")
-            if r <= u :
-                return (r)
-                break
+        # for itter in range(15):
+        #     r = time.monotonic_ns()%Dlen
+        #     # print(r)
+        #     time.sleep(0.005)
+        #     # print(f"{itter} : its not the res: {r}")
+        #     if r <= u :
+        #         return (r)
+        #         break
         return u//rand(100)
 
 # print(rand(45))
