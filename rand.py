@@ -1,9 +1,4 @@
-import time, numpy 
-
-# x = time.monotonic_ns()
-# print(x)
-# print(x%10)
-
+import time
 
 
 
@@ -22,16 +17,39 @@ def rand(u=10):
             if r <= u :
                 return (r)
                 break
-
-
-
-        
-
-
-while True:
-    test = rand(73)
-    if test <= 73:
-        print("Success! --> ", test)
+            #ended with succes :)
+    
+    elif u<=1000:
+        while True:
+            r = time.monotonic_ns()%1000
+            if r <= u :
+                return (r)
+                break
     else:
-        print("noway!xD")
-        break
+        # if more than 1000 we should count the digit len
+        # digit count with logic
+        """c = 0
+        nu = u
+        while nu > 0:
+            c += 1
+            nu //= 10
+        print(c)"""
+        # also with this method:
+        c = (len(str(u)))
+        Dlen = 
+        while True:
+            r = time.monotonic_ns()%1000
+            if r <= u :
+                return (r)
+                break
+
+rand(15684645)
+
+# # test area ...
+# while True:
+#     test = rand(730)
+#     if test <= 730:
+#         print("Success! --> ", test)
+#     else:
+#         print("noway!xD")
+#         break
