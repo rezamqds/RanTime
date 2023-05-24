@@ -73,7 +73,7 @@ def rand(u=10):
                 return (r)
                 break"""
         
-        for itter in range(50):
+        for itter in range(15):
             r = time.monotonic_ns()%Dlen
             time.sleep(0.005)
             # print(f"{itter} : its not the res: {r}")
