@@ -36,20 +36,22 @@ def rand(u=10):
         print(c)"""
         # also with this method:
         c = (len(str(u)))
-        Dlen = 
+
+        # we got the len and use it with .format and join for more greater numbers!
+        Dlen = pow(10, c) 
+        # print(Dlen)
+        # Dlen: use it for times that should mul the num in 10
         while True:
-            r = time.monotonic_ns()%1000
+            r = time.monotonic_ns()%Dlen
             if r <= u :
                 return (r)
                 break
 
-rand(15684645)
-
-# # test area ...
-# while True:
-#     test = rand(730)
-#     if test <= 730:
-#         print("Success! --> ", test)
-#     else:
-#         print("noway!xD")
-#         break
+# test area ...
+while True:
+    test = rand(64464654)
+    if test <= 64464654:
+        print("Success! --> ", test)
+    else:
+        print("noway!xD")
+        break
